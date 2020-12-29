@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/tvFragment">
+
+    <fragment
+        android:id="@+id/tvFragment"
+        android:name="com.example.tvshows.fragments.TvFragment"
+        android:label="Movies List"
+        tools:layout="@layout/fragment_tv" >
+        <action
+            android:id="@+id/action_tvFragment_to_tvDetailsFragment"
+            app:destination="@id/tvDetailsFragment"
+            app:popUpTo="@id/tvFragment"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/tvDetailsFragment"
+        android:name="com.example.tvshows.fragments.TvDetailsFragment"
+        android:label="Movie Detalis" >
+        <action
+            android:id="@+id/action_tvDetailsFragment_to_tvWebsite"
+            app:destination="@id/tvWebsite"
+            app:popUpTo="@id/tvDetailsFragment"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_tvDetailsFragment_to_tvFragment"
+            app:destination="@id/tvFragment"
+            app:popUpTo="@id/tvFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/tvWebsite"
+        android:name="com.example.tvshows.fragments.TvWebsite"
+        android:label="Movie Website" >
+        <action
+            android:id="@+id/action_tvWebsite_to_tvDetailsFragment"
+            app:destination="@id/tvDetailsFragment"
+            app:popUpTo="@id/tvDetailsFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".fragments.TvDetailsFragment">
+
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/ic_launcher_background"
+        android:id="@+id/moviesimage"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="ABC"
+        android:id="@+id/moviename"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="type"
+        android:id="@+id/type"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="5.0"
+        android:textAlignment="center"
+        android:id="@+id/rating"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Movie Language"
+        android:id="@+id/movielanguage"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Genere"
+        android:id="@+id/genres"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:textAlignment="center"
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold|italic"
+            android:text="Time : "/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:textAlignment="center"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/time"
+            android:text="Time"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:textAlignment="center"
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold|italic"
+            android:text="Days : "/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="right"
+            android:text="days"
+            android:id="@+id/days"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:textStyle="bold|italic"
+            android:layout_margin="10dp"
+            android:text="premired"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/premired"
+            android:layout_gravity="left"
+            android:layout_margin="10dp"
+            android:text="premired"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:textStyle="bold|italic"
+            android:layout_margin="10dp"
+            android:text="Status : "/>
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="status" />
+
+    </LinearLayout>
+
+    <org.sufficientlysecure.htmltextview.HtmlTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Summary"
+        android:textAlignment="center"
+        android:id="@+id/summary"/>
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/officalsite"
+        android:text="Go to officalsite"/>
+
+</LinearLayout>
+    </ScrollView>
+</layout>
